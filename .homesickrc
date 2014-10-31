@@ -6,6 +6,6 @@ end
 # For Github
 # ref. https://github.com/xentek/dotfiles/blob/master/.homesickrc
 username = self.ask "Git user.name: "
-`git config user.name "#{username}" -f "#{Dir.getwd}/home/.gitconfig"`
+`git config -f "#{Dir.getwd}/home/.gitconfig" user.name "#{username}"`
 email = self.ask "Git user.email: "
-`git config user.email "#{email}" -f "#{Dir.getwd}/home/.gitconfig"`
+`git config -f "#{Dir.getwd}/home/.gitconfig" user.email "#{email}" `
