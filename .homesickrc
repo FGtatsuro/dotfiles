@@ -1,7 +1,7 @@
 # For prezto
 for org in Dir.glob("#{Dir.getwd}/home/.zprezto/runcoms/z*") do 
   link = "#{Dir.getwd}/home/.#{File.basename(org)}"
-  File.symlink(org, link) unless symlink?(link)
+  File.symlink(org, link) unless File.symlink?(link)
 end
 
 # For Github
