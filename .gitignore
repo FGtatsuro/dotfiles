@@ -1,0 +1,9 @@
+home/.zlogin
+home/.zlogout
+home/.zpreztorc
+home/.zprofile
+home/.zshenv
+home/.zshrc
+
+home/.vimperator/info/
+home/.vim/.netrwhist

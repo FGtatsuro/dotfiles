@@ -1,0 +1,11 @@
+# For prezto
+for org in Dir.glob("#{Dir.getwd}/home/.zprezto/runcoms/z*") do 
+  File.symlink(org, "#{Dir.getwd}/home/.#{File.basename(org)}")
+end
+
+# For Github
+# ref. https://github.com/xentek/dotfiles/blob/master/.homesickrc
+username = self.ask "Git user.name: "
+`git config user.name "#{username}" -f "#{Dir.getwd}/home/.gitconfig"`
+email = self.ask "Git user.email: "
+`git config user.email "#{email}" -f "#{Dir.getwd}/home/.gitconfig"`

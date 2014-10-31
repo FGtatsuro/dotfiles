@@ -1,0 +1,9 @@
+[color]
+	ui = auto
+[core]
+	excludesfile = /Users/tatsuro/.gitignore_global
+	editor = vim
+	quotepath = false
+	precomposeunicode = true
+[merge]
+	ff = false
