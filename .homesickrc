@@ -6,7 +6,8 @@ end
 
 # For Github
 # ref. https://github.com/xentek/dotfiles/blob/master/.homesickrc
-username = self.ask "Git user.name: "
-`git config -f "#{Dir.getwd}/home/.gitconfig" user.name "#{username}"`
-email = self.ask "Git user.email: "
-`git config -f "#{Dir.getwd}/home/.gitconfig" user.email "#{email}" `
+# If you want to set your Github account, please uncomment following steps.
+# username = self.ask "Git user.name: "
+# `git config -f "#{Dir.getwd}/home/.gitconfig" user.name "#{username}"`
+# email = self.ask "Git user.email: "
+# `git config -f "#{Dir.getwd}/home/.gitconfig" user.email "#{email}" `
