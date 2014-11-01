@@ -6,4 +6,7 @@
 	quotepath = false
 	precomposeunicode = true
 [merge]
-	ff = false
+        ff = false
+[user]
+	name = FGtatsuro
+	email = fujiistorage@gmail.com
