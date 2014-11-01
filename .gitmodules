@@ -1,3 +1,6 @@
 [submodule "home/.zprezto"]
 	path = home/.zprezto
 	url = git@github.com:FGtatsuro/prezto.git
+[submodule "home/.anyenv"]
+	path = home/.anyenv
+	url = git@github.com:riywo/anyenv.git
