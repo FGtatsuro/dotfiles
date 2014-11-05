@@ -1,3 +1,8 @@
 #!/bin/bash
 # This hook is run after every virtualenv is activated.
 
+if [ `pip freeze | grep PySide` ]; then
+  # Now, I can use PySide on only 2.7.x environment
+  DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$VIRTUAL_ENV/lib/python2.7/site-packages/PySide
+  export DYLD_LIBRARY_PATH=`echo $DYLD_LIBRARY_PATH | sed -e "s|^:||g"`
+fi
