@@ -5,6 +5,7 @@ set noswapfile
 set visualbell t_vb=
 set nocompatible
 set backspace=indent,eol,start
+set clipboard+=unnamed
 
 filetype plugin indent on
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
