@@ -7,6 +7,6 @@ if [ `pip freeze | grep PySide` ]; then
   DYLD_LIBRARY_PATH=`echo $DYLD_LIBRARY_PATH | sed -e "s|:$||g"`
 fi
 
-if [ -z `echo $DYLD_LIBRARY_PATH` ]; then
+if [ -z $DYLD_LIBRARY_PATH ]; then
   unset DYLD_LIBRARY_PATH
 fi
