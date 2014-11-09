@@ -8,3 +8,12 @@ if [ `pip freeze | grep PySide` ]; then
     unset DYLD_LIBRARY_PATH
   fi
 fi
+
+if [ `basename $VIRTUAL_ENV | grep pyqt` ]; then
+  # Now, I can use PyQt on only 3.4.x environment
+  BREW_PYQT_PATH=`brew --prefix pyqt5`/lib/python3.4/site-packages:`brew --prefix sip`/lib/python3.4/site-packages
+  export PYTHONPATH=`echo $PYTHONPATH | sed -e "s|$BREW_PYQT_PATH||g"`
+  if [ -z $PYTHONPATH ];then
+    unset PYTHONPATH
+  fi
+fi
