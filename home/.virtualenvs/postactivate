@@ -4,8 +4,8 @@
 if [ `pip freeze | grep PySide` ]; then
   # Now, I can use PySide on only 2.7.x environment
   if [ $DYLD_LIBRARY_PATH ]; then
-    DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$VIRTUAL_ENV/lib/python2.7/site-packages/PySide
+    export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$VIRTUAL_ENV/lib/python2.7/site-packages/PySide
   else
-    DYLD_LIBRARY_PATH=$VIRTUAL_ENV/lib/python2.7/site-packages/PySide
+    export DYLD_LIBRARY_PATH=$VIRTUAL_ENV/lib/python2.7/site-packages/PySide
   fi
 fi
