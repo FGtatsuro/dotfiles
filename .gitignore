@@ -13,3 +13,6 @@ home/.virtualenvs/*/
 
 # tmux plugin
 home/.tmux/plugins/*
+
+# iPython
+home/.ipython/profile_default/history.sqlite
