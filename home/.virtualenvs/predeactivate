@@ -2,8 +2,8 @@
 # This hook is run before every virtualenv is deactivated.
 
 if [ `pip freeze | grep PySide` ]; then
-  # Now, I can use PySide on only 2.7.x environment
-  VENV_PYSIDE_PATH=$VIRTUAL_ENV/lib/python2.7/site-packages/PySide
+  # Now, I can use PySide on only 3.4.x environment
+  VENV_PYSIDE_PATH=$VIRTUAL_ENV/lib/python3.4/site-packages/PySide
   export DYLD_LIBRARY_PATH=`echo $DYLD_LIBRARY_PATH | sed -e "s|$VENV_PYSIDE_PATH||g"`
   if [ -z $DYLD_LIBRARY_PATH ]; then
     unset DYLD_LIBRARY_PATH
