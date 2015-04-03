@@ -3,6 +3,5 @@ if exists('b:did_ftplugin_groovy')
 endif
 let b:did_ftplugin_groovy=1
 
-set noexpandtab
 set tabstop=4
 set shiftwidth=4
