@@ -13,7 +13,6 @@ set visualbell t_vb=
 set backspace=indent,eol,start
 set clipboard+=unnamed
 
-filetype plugin indent on
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 autocmd BufNewFile *.py 0r ~/.vim/template/template.py
 autocmd BufNewFile *.htm 0r ~/.vim/template/template.html
@@ -26,4 +25,5 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundleFetch 'Shougo/neobundle.vim'
   NeoBundle 'jmcantrell/vim-virtualenv'
 call neobundle#end()
+filetype plugin indent on
 NeoBundleCheck
