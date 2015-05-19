@@ -1,0 +1,11 @@
+[ui]
+username = tatsuro.fujii<fujiistorage@gmail.com>
+
+[extensions]
+graphlog=
+color=
+pager=
+progress =
+
+[pager]
+pager = LESS='FSRX' less
