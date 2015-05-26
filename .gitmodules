@@ -1,12 +1,12 @@
 [submodule "home/.zprezto"]
 	path = home/.zprezto
 	url = git@github.com:FGtatsuro/prezto.git
-[submodule "home/.anyenv"]
-	path = home/.anyenv
-	url = git@github.com:riywo/anyenv.git
 [submodule "home/.tmux/plugins/tpm"]
 	path = home/.tmux/plugins/tpm
 	url = git@github.com:tmux-plugins/tpm.git
 [submodule "home/.vim/bundle/neobundle.vim"]
 	path = home/.vim/bundle/neobundle.vim
 	url = git@github.com:Shougo/neobundle.vim.git
+[submodule "home/.anyenv"]
+	path = home/.anyenv
+	url = git@github.com:FGtatsuro/anyenv.git
