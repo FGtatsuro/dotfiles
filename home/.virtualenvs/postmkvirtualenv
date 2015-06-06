@@ -6,3 +6,4 @@ pip install --upgrade setuptools
 pip install wheel
 pip install pdb
 pip install docutils
+pip install twine
