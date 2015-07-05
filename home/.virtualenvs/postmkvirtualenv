@@ -6,3 +6,4 @@ pip install --upgrade setuptools
 pip install wheel
 pip install docutils
 pip install twine
+pip install autopep8
