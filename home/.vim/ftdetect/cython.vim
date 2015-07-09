@@ -1,1 +1,1 @@
-autocmd BufRead,BufNewFile *.pyx set filetype=cython
+autocmd BufRead,BufNewFile *.pyx,*.pxd set filetype=cython
