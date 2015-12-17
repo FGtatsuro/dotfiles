@@ -7,6 +7,7 @@ endif
 
 syntax on
 set number
+set relativenumber
 set expandtab
 set noswapfile
 set visualbell t_vb=
