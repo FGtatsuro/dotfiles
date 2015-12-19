@@ -20,12 +20,26 @@ autocmd BufNewFile *.htm 0r ~/.vim/template/template.html
 autocmd BufNewFile *.html 0r ~/.vim/template/template.html
 
 runtime macros/matchit.vim
+ 
+if $VIRTUAL_ENV != ''
+  let b:python_lib_dir = $VIRTUAL_ENV.'/lib/'
+  let b:python_ver = matchlist(systemlist('ls '.b:python_lib_dir), '^python\(\d\)\.\d$')
+  let b:python_site_packages_dir = b:python_lib_dir.b:python_ver[0].'/site-packages'
+  if b:python_ver[1] == '2'
+    let g:jedi#force_py_version = 2
+    py import vim; sys.path.insert(0, vim.eval('b:python_site_packages_dir'))
+  else
+    let g:jedi#force_py_version = 3
+    py3 import vim; sys.path.insert(0, vim.eval('b:python_site_packages_dir'))
+  endif
+endif
 
 " NeoBundle setting
 call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundleFetch 'Shougo/neobundle.vim'
-  NeoBundle 'jmcantrell/vim-virtualenv'
-  NeoBundle 'davidhalter/jedi-vim'
+  NeoBundleLazy 'davidhalter/jedi-vim', {
+        \ 'on_ft' : ['python']
+        \ }
   NeoBundle 'fatih/vim-go'
 call neobundle#end()
 filetype plugin indent on
