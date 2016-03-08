@@ -18,6 +18,8 @@ autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "norm
 autocmd BufNewFile *.py 0r ~/.vim/template/template.py
 autocmd BufNewFile *.htm 0r ~/.vim/template/template.html
 autocmd BufNewFile *.html 0r ~/.vim/template/template.html
+"" http://qiita.com/katton/items/bc9720826120f5f61fc1
+autocmd BufWritePre * let c = getcurpos() | :%s/\s\+$//ge | call setpos('.', c) | unlet c
 
 runtime macros/matchit.vim
  
