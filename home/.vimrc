@@ -7,7 +7,7 @@ endif
 
 syntax on
 set number
-set relativenumber
+"set relativenumber
 set expandtab
 set noswapfile
 set visualbell t_vb=
@@ -22,7 +22,7 @@ autocmd BufNewFile *.html 0r ~/.vim/template/template.html
 autocmd BufWritePre * let c = getcurpos() | :%s/\s\+$//ge | call setpos('.', c) | unlet c
 
 runtime macros/matchit.vim
- 
+
 if $VIRTUAL_ENV != ''
   let b:python_lib_dir = $VIRTUAL_ENV.'/lib/'
   let b:python_ver = matchlist(systemlist('ls '.b:python_lib_dir), '^python\(\d\)\.\d$')
@@ -48,3 +48,4 @@ filetype plugin indent on
 NeoBundleCheck
 
 set shell=/usr/local/bin/zsh
+hi Comment ctermfg=lightblue
