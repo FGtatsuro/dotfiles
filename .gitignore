@@ -7,6 +7,10 @@ home/.zshrc
 
 home/.vimperator/info/
 home/.vim/.netrwhist
+home/.vim/bundle/*/
+home/.vim/bundle/NeoBundle.lock
+
+home/.m2/
 
 # Specified virtialenv(=directory)
 home/.virtualenvs/*/
@@ -16,3 +20,5 @@ home/.tmux/plugins/*
 
 # iPython
 home/.ipython/profile_default/history.sqlite
+home/.ipython/cython/
+home/.ipython/profile_default/db/rootmodules_cache
