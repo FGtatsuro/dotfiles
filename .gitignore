@@ -10,6 +10,8 @@ home/.vim/.netrwhist
 home/.vim/bundle/*/
 home/.vim/bundle/NeoBundle.lock
 
+home/.m2/
+
 # Specified virtialenv(=directory)
 home/.virtualenvs/*/
 
