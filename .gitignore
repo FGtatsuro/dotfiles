@@ -22,3 +22,5 @@ home/.tmux/plugins/*
 home/.ipython/profile_default/history.sqlite
 home/.ipython/cython/
 home/.ipython/profile_default/db/rootmodules_cache
+
+home/.config/*
