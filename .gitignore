@@ -15,12 +15,10 @@ home/.m2/
 # Specified virtialenv(=directory)
 home/.virtualenvs/*/
 
-# tmux plugin
-home/.tmux/plugins/*
-
 # iPython
 home/.ipython/profile_default/history.sqlite
 home/.ipython/cython/
 home/.ipython/profile_default/db/rootmodules_cache
+home/.ipython/profile_default/db/dhist
 
 home/.config/*
