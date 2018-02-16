@@ -1,5 +1,6 @@
 set clipboard+=unnamed
 filetype plugin on
+set noswapfile
 
 " Depend on virtualenvs with specified names.
 let g:python_host_prog = $WORKON_HOME.'/py2.7/bin/python'
