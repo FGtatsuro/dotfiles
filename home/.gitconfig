@@ -2,7 +2,7 @@
 	ui = auto
 [core]
 	excludesfile = /Users/tatsuro/.gitignore_global
-	editor = vim
+	editor = nvim
 	quotepath = false
 	precomposeunicode = true
 [merge]
