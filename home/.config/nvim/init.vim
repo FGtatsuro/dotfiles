@@ -2,6 +2,5 @@ set clipboard+=unnamed
 filetype plugin on
 set noswapfile
 
-" Depend on virtualenvs with specified names.
-let g:python_host_prog = $WORKON_HOME.'/py2.7/bin/python'
-let g:python3_host_prog = $WORKON_HOME.'/py3.6/bin/python'
+" Depend on the specified path of Python built manually.
+let g:python3_host_prog = $HOME.'/repos/cpython/py3/latest/bin/python3'
