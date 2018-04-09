@@ -1,5 +1,5 @@
 set clipboard+=unnamed
-filetype plugin on
+filetype plugin indent on
 set noswapfile
 
 " Depend on the specified path of Python built manually.
