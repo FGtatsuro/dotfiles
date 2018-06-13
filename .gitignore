@@ -22,3 +22,4 @@ home/.ipython/profile_default/db/rootmodules_cache
 home/.ipython/profile_default/db/dhist
 
 home/.config/*
+!home/.config/nvim
