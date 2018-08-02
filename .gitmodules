@@ -4,3 +4,6 @@
 [submodule "home/.vim/bundle/neobundle.vim"]
 	path = home/.vim/bundle/neobundle.vim
 	url = git@github.com:Shougo/neobundle.vim.git
+[submodule "home/.config/nvim/bundle/scrapbox.nvim"]
+	path = home/.config/nvim/bundle/scrapbox.nvim
+	url = git@github.com:FGtatsuro/scrapbox.nvim.git
