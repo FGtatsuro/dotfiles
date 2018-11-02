@@ -5,6 +5,9 @@ set noswapfile
 hi Comment ctermfg=lightblue
 hi netrwDir ctermfg=Blue
 hi Search ctermfg=black
+hi DiffAdd cterm=underline ctermfg=red ctermbg=black
+hi DiffChange cterm=underline ctermfg=blue ctermbg=black
+hi DiffText cterm=underline ctermfg=yellow ctermbg=black
 
 " Depend on the specified path of Python built manually.
 let g:python3_host_prog = $HOME.'/repos/cpython/py3/latest/bin/python3'
