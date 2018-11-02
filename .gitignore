@@ -6,7 +6,7 @@ home/.zshenv
 home/.zshrc
 
 home/.vimperator/info/
-home/.vim/.netrwhist
+.netrwhist
 home/.vim/bundle/*/
 home/.vim/bundle/NeoBundle.lock
 
