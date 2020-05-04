@@ -10,7 +10,9 @@ let g:python3_host_prog = $HOME.'/repos/cpython/py3/latest/bin/python3'
 " For https://github.com/FGtatsuro/scrapbox.nvim
 let &runtimepath.=','.$HOME.'/.config/nvim/bundle/scrapbox.nvim'
 let g:scrapbox#project_url='https://scrapbox.io/fujiistorage-83609993'
-
+" For https://github.com/FGtatsuro/github.nvim
+let &runtimepath.=','.$HOME.'/.config/nvim/bundle/github.nvim'
+"
 set fileformat=unix
 set fileformats=unix,dos
 set fileencoding=utf-8
