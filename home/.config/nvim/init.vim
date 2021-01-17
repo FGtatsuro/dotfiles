@@ -19,4 +19,4 @@ set fileencoding=utf-8
 set fileencodings=utf-8,cp932
 
 set completeopt=menuone,preview,noselect
-set tags=./tags;,$HOME/repos/go/tags
+set tags=tags,./tags;,$HOME/repos/go/tags
